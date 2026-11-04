@@ -8,6 +8,7 @@ WA = "https://wa.me/491626327036"
 MAIL = "kontakt@clavis-itservice.de"
 SITE = "https://clavis-itservice.de"
 ICONS_URL = "assets/img/icons.svg"
+ASSET_V = "3"  # bei CSS-/JS-Änderungen erhöhen, damit Browser nicht die alte Version aus dem Cache nehmen
 
 # ---------------------------------------------------------------- Icons
 ICONS = {
@@ -303,7 +304,7 @@ def media(name, alt, cls="media", sizes="(min-width: 960px) 50vw, 100vw", pos=No
 NAV = [("index.html", "Start"), ("geschaeftskunden.html", "Unternehmen"), ("leistungen.html", "Privatkunden"),
        ("preise.html", "Preise"), ("ueber-mich.html", "Über mich"), ("kontakt.html", "Kontakt")]
 
-BRAND = '''<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><circle cx="12" cy="16" r="5" fill="none" stroke="#5EC4D8" stroke-width="2.6"/><path d="M17 16h9M22.5 16v4M26 16v3" fill="none" stroke="#5EC4D8" stroke-width="2.6" stroke-linecap="round"/></svg>
+BRAND = '''<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><circle cx="12" cy="16" r="5" fill="none" stroke="#FF6B5B" stroke-width="2.6"/><path d="M17 16h9M22.5 16v4M26 16v3" fill="none" stroke="#FF6B5B" stroke-width="2.6" stroke-linecap="round"/></svg>
       <span class="brand-text"><span class="brand-name">Clavis <span>IT Service</span></span><span class="brand-claim">Zuverlässig · Vor Ort</span></span>'''
 
 THEME_BOOT = ("<script>(function(){try{var t=localStorage.getItem('clavis-theme');"
@@ -386,8 +387,8 @@ def page(filename, title, desc, body, active=None, extra_head="", noindex=False)
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">{robots}
   <link rel="canonical" href="{canon}">
-  <meta name="theme-color" content="#F4ECE0" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0C1524" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F4EDE0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14213D" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="Clavis IT Service">
@@ -398,8 +399,8 @@ def page(filename, title, desc, body, active=None, extra_head="", noindex=False)
   <link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/space-grotesk-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   {THEME_BOOT}
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/main.js" defer></script>{extra_head}
+  <link rel="stylesheet" href="assets/css/styles.css?v={ASSET_V}">
+  <script src="assets/js/main.js?v={ASSET_V}" defer></script>{extra_head}
 </head>
 <body>
 <a class="skip-link" href="#main">Zum Inhalt springen</a>

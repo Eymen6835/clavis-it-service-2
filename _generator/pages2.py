@@ -79,7 +79,7 @@ preise_body = f'''
     </div>
   </section>
 
-  <section class="section section-alt" id="anfahrt" aria-labelledby="anfahrt-title">
+  <section class="section section-navy" id="anfahrt" aria-labelledby="anfahrt-title">
     <div class="container split">
       <div>
         {section_head("Anfahrt", "Anfahrt", left=True, hid="anfahrt-title")}
@@ -202,7 +202,7 @@ ueber_body = f'''
     </div>
   </section>
 
-  <section class="section" aria-labelledby="arbeit-title">
+  <section class="section section-navy" aria-labelledby="arbeit-title">
     <div class="container">
       {section_head("Haltung", "So arbeite ich", hid="arbeit-title")}
       {cards([
@@ -329,7 +329,7 @@ fern_body = f'''
     </div>
   </section>
 
-  <section class="section" aria-labelledby="schritte-title">
+  <section class="section section-navy" aria-labelledby="schritte-title">
     <div class="container">
       {section_head("In drei Schritten", "So funktioniert die Fernwartung", hid="schritte-title")}
       {steps3([

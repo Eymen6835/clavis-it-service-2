@@ -37,7 +37,10 @@ index_body = f'''
           {btn("leistungen.html", "Weiter als Privatkunde", "btn-primary", arrow=True)}
         </article>
       </div>
-      <p class="hint-line reveal">Nicht sicher, was passt? Rufen Sie an: <a href="{TEL}" class="nowrap">{PHONE}</a> oder schreiben Sie <a href="{WA}" rel="noopener">per WhatsApp</a>.</p>
+      <div class="coral-strip on-coral reveal">
+        <p><strong>Nicht sicher, was passt?</strong>Rufen Sie an: <a href="{TEL}" class="nowrap">{PHONE}</a> oder schreiben Sie per WhatsApp.</p>
+        <div class="btn-row">{btn_call("btn-lg", "Anrufen")}{btn_wa(label="WhatsApp")}</div>
+      </div>
     </div>
   </section>
 
@@ -58,7 +61,7 @@ index_body = f'''
     </div>
   </section>
 
-  <section class="section" aria-labelledby="ablauf-title">
+  <section class="section section-navy" aria-labelledby="ablauf-title">
     <div class="container">
       {section_head("Ablauf", "So läuft es ab", hid="ablauf-title")}
       {steps3([
@@ -153,7 +156,7 @@ unternehmen_body = f'''
     </div>
   </section>
 
-  <section class="section" aria-labelledby="weg-title">
+  <section class="section section-navy" aria-labelledby="weg-title">
     <div class="container">
       {section_head("Ablauf", "Bestandsaufnahme, Vorschlag, Umsetzung", hid="weg-title")}
       {steps3([
@@ -229,7 +232,7 @@ unternehmen_body = f'''
         </aside>
       </form>
       <p class="calc-disclaimer reveal">Unverbindliche Kalkulation, kein Angebot. Der endgültige Betrag steht nach einer kurzen Bestandsaufnahme fest. Geräte im Vertrag überwache ich laufend, Vertragskunden werden bei Störungen bevorzugt bearbeitet.</p>
-      <div class="callout reveal">
+      <div class="callout on-coral reveal">
         <p><strong>Größere Vorhaben für Vertragskunden</strong>Für ein neues Netzwerk, einen Umzug oder die Einführung von Microsoft 365 bekommen Vertragskunden auf Wunsch ein schriftliches Festpreisangebot. Webseiten gibt es für Vertragskunden immer zum Festpreis.</p>
       </div>
     </div>
@@ -357,7 +360,7 @@ privat_body = f'''
         ("file", "Impressum und Datenschutz inklusive", "Beide Seiten sind von Anfang an nach deutschem Recht dabei."),
       ])}
 
-      <div class="callout reveal">
+      <div class="callout on-coral reveal">
         <p><strong>Sie suchen IT-Betreuung für Ihr Unternehmen oder Ihre Praxis?</strong>Für Gewerbe, Kanzlei, Praxis und Handwerk biete ich Arbeitsplatz-Einrichtung, Firmennetzwerke, Microsoft 365, Datensicherung und E-Rechnung, alles im Wartungsvertrag.</p>
         {btn("geschaeftskunden.html", "Leistungen für Unternehmen ansehen", "btn-outline", "btn-sm", arrow=True)}
       </div>
