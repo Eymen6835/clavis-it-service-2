@@ -10,7 +10,7 @@ index_body = f'''
     <div class="container hero-grid">
       <div>
         <p class="eyebrow reveal">IT-Service · Zuverlässig · Vor Ort</p>
-        <h1 id="hero-title" class="reveal">IT-Service in Mannheim.<span class="hero-sub">Bei Ihnen vor Ort oder per Fernwartung.</span></h1>
+        <h1 id="hero-title" class="reveal">IT-Service in Mannheim.<span class="hero-sub"><span class="mark">Bei Ihnen vor Ort oder per Fernwartung.</span></span></h1>
         <p class="hero-lead reveal">Clavis IT Service: persönliche IT-Betreuung für Privathaushalte, Senioren und kleine Unternehmen.</p>
         <div class="btn-row reveal">{btn_call()}{btn_wa(label="Schreiben")}</div>
       </div>
