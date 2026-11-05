@@ -46,13 +46,13 @@
   --on-navy-muted: #c9bfae;
 
   /* Semantik */
-  --bg: var(--cream);
-  --bg-alt: var(--sand-100);
-  --surface: var(--cream-soft);
+  --bg: #ffffff;                 /* Seitenhintergrund weiß */
+  --bg-alt: var(--cream);        /* abwechselnde Abschnitte in Cream */
+  --surface: #ffffff;
   --surface-2: #ffffff;
   --text: var(--navy);
   --text-muted: #565049;
-  --border: #e1d6c4;
+  --border: #e8e0d2;
   --border-strong: var(--sand-300);
   --accent: var(--navy);
   --accent-soft: var(--peach-soft);
@@ -61,13 +61,13 @@
   --btn-bg: var(--coral);
   --btn-fg: var(--navy);
   --btn-hover: var(--coral-hover);
-  --header-bg: rgba(244, 237, 224, .88);
-  --hero-a: var(--sand-100);
-  --hero-b: var(--cream);
+  --header-bg: rgba(255, 255, 255, .9);
+  --hero-a: var(--cream);
+  --hero-b: #ffffff;
   --glow: rgba(255, 179, 166, .16);
   --grid-line: rgba(20, 33, 61, .06);
-  --media-a: var(--sand-200);
-  --media-b: var(--sand-100);
+  --media-a: var(--sand-100);
+  --media-b: var(--cream);
   --footer-bg: var(--navy);
   --warn-bg: #fdf4e1;
   --warn-border: #ead3a0;

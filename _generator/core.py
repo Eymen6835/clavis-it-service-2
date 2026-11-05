@@ -8,7 +8,7 @@ WA = "https://wa.me/491626327036"
 MAIL = "kontakt@clavis-itservice.de"
 SITE = "https://clavis-itservice.de"
 ICONS_URL = "assets/img/icons.svg"
-ASSET_V = "6"  # bei CSS-/JS-Änderungen erhöhen, damit Browser nicht die alte Version aus dem Cache nehmen
+ASSET_V = "7"  # bei CSS-/JS-Änderungen erhöhen, damit Browser nicht die alte Version aus dem Cache nehmen
 
 # ---------------------------------------------------------------- Icons
 ICONS = {
@@ -387,7 +387,7 @@ def page(filename, title, desc, body, active=None, extra_head="", noindex=False)
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">{robots}
   <link rel="canonical" href="{canon}">
-  <meta name="theme-color" content="#F4EDE0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#14213D" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
