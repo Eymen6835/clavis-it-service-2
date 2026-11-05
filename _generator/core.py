@@ -13,7 +13,7 @@ WA = "https://wa.me/491626327036"
 MAIL = "kontakt@clavis-itservice.de"
 SITE = "https://clavis-itservice.de"
 ICONS_URL = "assets/img/icons.svg"
-ASSET_V = "9"  # bei CSS-/JS-Änderungen erhöhen, damit Browser nicht die alte Version aus dem Cache nehmen
+ASSET_V = "10"  # bei CSS-/JS-Änderungen erhöhen, damit Browser nicht die alte Version aus dem Cache nehmen
 
 # ---------------------------------------------------------------- Icons
 ICONS = {
