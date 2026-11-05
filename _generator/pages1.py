@@ -14,7 +14,7 @@ index_body = f'''
         <p class="hero-lead reveal">Clavis IT Service: persönliche IT-Betreuung für Privathaushalte, Senioren und kleine Unternehmen.</p>
         <div class="btn-row reveal">{btn_call()}{btn_wa(label="Schreiben")}</div>
       </div>
-      {qr_card()}
+      {hero_aside()}
     </div>
   </section>
 
@@ -46,7 +46,7 @@ index_body = f'''
 
   <section class="section section-alt" aria-labelledby="person-title">
     <div class="container person">
-      {photo("Porträt Eymen Kumaru", cls="portrait", icon="user", note_text="Porträt folgt")}
+      {portrait()}
       <div>
         <p class="eyebrow reveal">Ihr Ansprechpartner</p>
         <h2 id="person-title" class="person-name reveal">Eymen Kumaru</h2>

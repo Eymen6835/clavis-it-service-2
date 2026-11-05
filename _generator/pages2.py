@@ -150,7 +150,7 @@ preise_body = f'''
 ueber_body = f'''
   <section class="page-hero" aria-labelledby="hero-title">
     <div class="container person">
-      {photo("Porträt Eymen Kumaru", cls="portrait", icon="user", note_text="Porträt folgt")}
+      {portrait(eager=True)}
       <div>
         <p class="eyebrow reveal">Über mich</p>
         <h1 id="hero-title" class="reveal">Eymen Kumaru</h1>

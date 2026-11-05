@@ -29,5 +29,6 @@ Gestaltung und Verhalten liegen unabhängig davon in `assets/css/styles.css` und
 
 - **Telefonnummer / E-Mail:** oben in `core.py` (`PHONE`, `TEL`, `WA`, `MAIL`). Die QR-Code-Grafik `assets/img/qr-anrufen.svg` muss bei neuer Nummer separat neu erzeugt werden.
 - **Preise im Rechner:** `CALC_ITEMS` in `pages1.py`. Den Mindestbetrag (199 €) zusätzlich in `assets/js/main.js` (`MIN`) anpassen.
+- **Porträt:** Foto im Hochformat (ideal 4:5, z. B. 800 × 1000 px) als `assets/img/portrait.webp` ablegen und die Seiten neu erzeugen. Es erscheint dann automatisch im Einstieg der Startseite (mit kleiner QR-Karte), im Abschnitt „Ihr Ansprechpartner“ und auf „Über mich“. Solange die Datei fehlt, zeigt die Startseite die QR-Karte und die anderen Stellen einen Platzhalter.
 - **Fotos einsetzen:** Die Platzhalter erzeugt die Funktion `photo()` in `core.py`. An der jeweiligen Stelle in `pages1.py` / `pages2.py` den `photo(...)`-Aufruf durch ein Bild ersetzen, z. B.
   `<div class="portrait"><img src="assets/img/portrait.webp" alt="Eymen Kumaru" width="640" height="800"></div>`

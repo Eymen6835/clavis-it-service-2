@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 """Gemeinsame Bausteine für die Clavis-IT-Service-Seiten."""
 import html as _html
+import os
+
+# Projektordner (eine Ebene über _generator); dient zur Prüfung, ob das Porträt schon vorliegt.
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PORTRAIT = "assets/img/portrait.webp"
 
 PHONE = "0162 63270 36"
 TEL = "tel:+491626327036"
@@ -8,7 +13,7 @@ WA = "https://wa.me/491626327036"
 MAIL = "kontakt@clavis-itservice.de"
 SITE = "https://clavis-itservice.de"
 ICONS_URL = "assets/img/icons.svg"
-ASSET_V = "8"  # bei CSS-/JS-Änderungen erhöhen, damit Browser nicht die alte Version aus dem Cache nehmen
+ASSET_V = "9"  # bei CSS-/JS-Änderungen erhöhen, damit Browser nicht die alte Version aus dem Cache nehmen
 
 # ---------------------------------------------------------------- Icons
 ICONS = {
@@ -278,6 +283,37 @@ def area_svg():
     </figure>'''
 
 
+def has_portrait():
+    return os.path.exists(os.path.join(ROOT, PORTRAIT))
+
+
+def portrait(eager=False):
+    """Porträt mit festem 4:5-Rahmen; solange assets/img/portrait.webp fehlt, ein Platzhalter."""
+    if not has_portrait():
+        return photo("Porträt Eymen Kumaru", cls="portrait", icon="user", note_text="Porträt folgt")
+    load = 'fetchpriority="high"' if eager else 'loading="lazy"'
+    return (f'<div class="portrait reveal"><img src="{PORTRAIT}" alt="Eymen Kumaru, Inhaber von Clavis IT Service" '
+            f'width="800" height="1000" {load} decoding="async"></div>')
+
+
+def hero_aside(label="Scannen und direkt anrufen"):
+    """Rechte Spalte im Einstieg: Porträt mit kleiner QR-Karte – oder die QR-Karte, solange kein Foto da ist."""
+    if not has_portrait():
+        return qr_card(label)
+    return f'''<div class="hero-portrait reveal">
+        {portrait(eager=True).replace(' reveal', '')}
+        <div class="qr-mini" aria-hidden="true">
+          <div class="qr"><img src="assets/img/qr-anrufen.svg" width="66" height="66" alt=""></div>
+          <div><span class="qr-label">{label}</span><span class="qr-phone">{PHONE}</span></div>
+        </div>
+      </div>'''
+
+
+def call_bar():
+    return (f'<div class="call-bar" data-call-bar>{btn_call("btn-lg", "Anrufen")}'
+            f'{btn_wa("btn-lg", "WhatsApp")}</div>')
+
+
 def photo(label, cls="media", icon="camera", note_text="Foto folgt"):
     # Platzhalter mit fester Fläche: Bild später als <img> mit width/height einsetzen.
     return f'''<div class="{cls} reveal">
@@ -327,6 +363,7 @@ def header(active):
       <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Dunkle Darstellung aktivieren">
         {ic("moon", "i-moon")}{ic("sun", "i-sun")}
       </button>
+      <a class="icon-btn header-phone-icon" href="{TEL}" aria-label="Anrufen: {PHONE}">{ic("phone")}</a>
       <a class="btn btn-primary btn-sm header-phone" href="{TEL}">{ic("phone")}{PHONE}</a>
       <button class="icon-btn nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menü öffnen" data-nav-toggle>
         {ic("menu", "i-open")}{ic("x", "i-close")}
@@ -383,7 +420,7 @@ def page(filename, title, desc, body, active=None, extra_head="", noindex=False)
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">{robots}
   <link rel="canonical" href="{canon}">
@@ -409,6 +446,7 @@ def page(filename, title, desc, body, active=None, extra_head="", noindex=False)
 {body}
 </main>
 {footer()}
+{call_bar()}
 </body>
 </html>
 '''

@@ -14,8 +14,21 @@
     initTabs();
     initCalc();
     initDownload();
+    initCallBar();
     document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
   });
+
+  /* ---------- Anrufleiste am Handy ----------
+     Erscheint, sobald die Anruf-Buttons im Seitenkopf aus dem Bild gescrollt sind. */
+  function initCallBar() {
+    var bar = document.querySelector('[data-call-bar]');
+    if (!bar) return;
+    var heroButtons = document.querySelector('.page-hero .btn-row');
+    if (!heroButtons || !('IntersectionObserver' in window)) { bar.classList.add('is-visible'); return; }
+    new IntersectionObserver(function (entries) {
+      bar.classList.toggle('is-visible', !entries[0].isIntersecting && entries[0].boundingClientRect.top < 0);
+    }).observe(heroButtons);
+  }
 
   /* ---------- Hell/Dunkel ----------
      Gespeichert wird nur nach Klick auf den Schalter (localStorage "clavis-theme"). */
