@@ -26,7 +26,10 @@ Details in [`_generator/README.md`](_generator/README.md).
 
 ## Veröffentlichen
 
-Alle Dateien außer `_generator/` und `README.md` auf den Webserver hochladen.
+Die Website läuft über GitHub Pages aus dem Branch `main` (Stammverzeichnis):
+https://eymen6835.github.io/clavis-it-service-2/
+
+Jeder `git push` auf `main` aktualisiert die Seite nach etwa einer Minute.
 
 ## Bildnachweis
 

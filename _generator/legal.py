@@ -46,7 +46,7 @@ impressum = legal_page("Impressum", '''
       <p>Die Fotos auf dieser Website stammen, abgesehen von meinem Porträt, von Unsplash und werden unter der Unsplash-Lizenz verwendet.</p>
 
       <h2>Verwendete Schriftarten</h2>
-      <p>Diese Website verwendet die Schriftarten Space Grotesk, Schibsted Grotesk und Inter, die alle unter der SIL Open Font License 1.1 stehen. Die Schriftdateien werden ausschließlich vom eigenen Server geladen; eine Verbindung zu externen Anbietern besteht nicht.</p>
+      <p>Diese Website verwendet die Schriftarten Space Grotesk, Schibsted Grotesk und Inter, die alle unter der SIL Open Font License 1.1 stehen. Die Schriftdateien werden zusammen mit dieser Website ausgeliefert; eine Verbindung zu Schriftanbietern wie Google Fonts besteht nicht.</p>
 
       <p class="stand">Stand: November 2026</p>''')
 
@@ -61,7 +61,7 @@ datenschutz = legal_page("Datenschutzerklärung", '''
       <ul>
         <li>keine Cookies und keine Speicherung zu Analyse-, Werbe- oder Wiedererkennungszwecken,</li>
         <li>keine Analyse- oder Tracking-Dienste (kein Google Analytics, kein Matomo, keine Pixel),</li>
-        <li>keine externen Schriftarten, alle Schriften werden vom eigenen Server geladen,</li>
+        <li>keine externen Schriftarten, alle Schriften werden zusammen mit der Website ausgeliefert,</li>
         <li>keine Karten-, Video- oder Social-Media-Einbindungen,</li>
         <li>kein Kontaktformular, keine Newsletter-Anmeldung, keine Registrierung,</li>
         <li>keine Weitergabe von Daten zu Werbezwecken.</li>
@@ -69,12 +69,12 @@ datenschutz = legal_page("Datenschutzerklärung", '''
       <p>Es gibt daher nichts, wozu Sie einwilligen müssten, und deshalb steht auf dieser Website auch kein Einwilligungsbanner.</p>
       <p>Eine einzige Angabe wird lokal in Ihrem Browser abgelegt (localStorage, Eintrag clavis-theme): Ihre Auswahl zwischen heller und dunkler Darstellung. Sie entsteht nur, wenn Sie den Schalter in der Kopfzeile betätigen, und dient allein dazu, die Seite beim nächsten Aufruf so anzuzeigen, wie Sie es eingestellt haben. Sie verlässt Ihr Gerät nicht, wird nicht an mich übertragen und lässt keinen Rückschluss auf Ihre Person zu. Sie können sie jederzeit löschen, indem Sie die Websitedaten in Ihrem Browser entfernen.</p>
 
-      <h2>3. Aufruf der Website (Server-Logfiles)</h2>
-      <p>Beim Aufruf dieser Website werden automatisch Daten in sogenannten Server-Logfiles gespeichert, die Ihr Browser übermittelt: IP-Adresse, Datum und Uhrzeit des Zugriffs, Name und URL der abgerufenen Datei, übertragene Datenmenge, Browsertyp und Betriebssystem sowie die zuvor besuchte Seite (Referrer), sofern übermittelt.</p>
-      <p><strong>Kürzung der IP-Adresse:</strong> Die IP-Adresse wird vor dem Speichern gekürzt. Bei IPv4 wird der letzte Zahlenblock durch Null ersetzt, bei IPv6 alles ab dem dritten Block. Aus 192.0.2.77 wird in der Protokolldatei also 192.0.2.0.</p>
-      <p><strong>Zweck und Rechtsgrundlage:</strong> Sicherstellung eines störungsfreien Betriebs, Gewährleistung der Systemsicherheit und Abwehr von Angriffen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).</p>
-      <p><strong>Speicherdauer:</strong> Die Logfiles werden nach spätestens 30 Tagen gelöscht, sofern sie nicht ausnahmsweise zur Aufklärung eines konkreten Sicherheitsvorfalls länger benötigt werden.</p>
-      <p><strong>Hosting:</strong> Diese Website läuft auf einem Server, den ich bei der Hetzner Online GmbH, Industriestraße 25, 91710 Gunzenhausen, angemietet habe und selbst verwalte. Die Protokolldateien entstehen auf diesem Server. Hetzner stellt die Infrastruktur bereit und verarbeitet die genannten Daten in meinem Auftrag auf Grundlage eines Vertrags zur Auftragsverarbeitung nach Art. 28 DSGVO.</p>
+      <h2>3. Hosting und Aufruf der Website</h2>
+      <p>Diese Website wird über GitHub Pages bereitgestellt, einen Dienst von GitHub. Für Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum ist dies die GitHub B.V., Prins Bernhardplein 200, 1097 JB Amsterdam, Niederlande; Muttergesellschaft ist die GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.</p>
+      <p>Beim Aufruf dieser Website verarbeitet GitHub technisch notwendige Daten, die Ihr Browser übermittelt, insbesondere Ihre IP-Adresse, Datum und Uhrzeit des Zugriffs, die abgerufene Datei sowie Browser- und Geräteangaben. GitHub nutzt diese Daten, um die Website auszuliefern und die Sicherheit des Dienstes zu gewährleisten, und speichert sie dafür in eigenen Protokolldateien. Auf diese Protokolle habe ich keinen Zugriff; die IP-Adressen kann ich daher weder kürzen noch auswerten.</p>
+      <p><strong>Zweck und Rechtsgrundlage:</strong> Zuverlässige, schnelle und sichere Bereitstellung dieser Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).</p>
+      <p><strong>Übermittlung in die USA:</strong> Dabei können Daten an die GitHub, Inc. in den USA übermittelt werden. GitHub ist nach dem EU-U.S. Data Privacy Framework zertifiziert; die Übermittlung stützt sich auf den Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO).</p>
+      <p><strong>Speicherdauer:</strong> Wie lange GitHub die Zugriffsdaten speichert, richtet sich nach der Datenschutzerklärung von GitHub (docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).</p>
 
       <h2>4. Verschlüsselung</h2>
       <p>Diese Website nutzt eine SSL- bzw. TLS-Verschlüsselung, erkennbar am „https://“ in der Adresszeile und am Schloss-Symbol Ihres Browsers. Daten, die Sie an diese Website übermitteln, können dadurch nicht von Dritten mitgelesen werden.</p>
@@ -113,7 +113,7 @@ datenschutz = legal_page("Datenschutzerklärung", '''
       <p>Das Programm TeamViewer QuickSupport laden Sie über die Seite <a href="fernwartung.html">„Fernwartung starten“</a> direkt von den Servern von TeamViewer herunter, nicht von dieser Website. Beim Klick auf den Download-Link übermittelt Ihr Browser dafür Ihre IP-Adresse und technische Browserdaten an TeamViewer.</p>
 
       <h2>8. Empfänger von Daten</h2>
-      <p>Eine Weitergabe Ihrer Daten findet nur statt, soweit dies zur Vertragserfüllung erforderlich ist oder gesetzliche Vorgaben es verlangen, etwa an das Finanzamt oder an ein Steuerbüro im Rahmen der Buchführung. Außerdem setze ich die oben genannten Dienstleister ein: Hetzner (Server dieser Website), Microsoft (E-Mail), WhatsApp (Nachrichten) und TeamViewer (Fernwartung). Eine Weitergabe zu Werbezwecken erfolgt nicht.</p>
+      <p>Eine Weitergabe Ihrer Daten findet nur statt, soweit dies zur Vertragserfüllung erforderlich ist oder gesetzliche Vorgaben es verlangen, etwa an das Finanzamt oder an ein Steuerbüro im Rahmen der Buchführung. Außerdem setze ich die oben genannten Dienstleister ein: GitHub (Bereitstellung dieser Website), Microsoft (E-Mail), WhatsApp (Nachrichten) und TeamViewer (Fernwartung). Eine Weitergabe zu Werbezwecken erfolgt nicht.</p>
 
       <h2>9. Ihre Rechte</h2>
       <p>Sie haben jederzeit das Recht:</p>
