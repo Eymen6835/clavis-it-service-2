@@ -8,7 +8,7 @@ WA = "https://wa.me/491626327036"
 MAIL = "kontakt@clavis-itservice.de"
 SITE = "https://clavis-itservice.de"
 ICONS_URL = "assets/img/icons.svg"
-ASSET_V = "5"  # bei CSS-/JS-Änderungen erhöhen, damit Browser nicht die alte Version aus dem Cache nehmen
+ASSET_V = "6"  # bei CSS-/JS-Änderungen erhöhen, damit Browser nicht die alte Version aus dem Cache nehmen
 
 # ---------------------------------------------------------------- Icons
 ICONS = {
@@ -304,7 +304,7 @@ def media(name, alt, cls="media", sizes="(min-width: 960px) 50vw, 100vw", pos=No
 NAV = [("index.html", "Start"), ("geschaeftskunden.html", "Unternehmen"), ("leistungen.html", "Privatkunden"),
        ("preise.html", "Preise"), ("ueber-mich.html", "Über mich"), ("kontakt.html", "Kontakt")]
 
-BRAND = '''<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><circle cx="12" cy="16" r="5" fill="none" stroke="#FF9585" stroke-width="2.6"/><path d="M17 16h9M22.5 16v4M26 16v3" fill="none" stroke="#FF9585" stroke-width="2.6" stroke-linecap="round"/></svg>
+BRAND = '''<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><circle cx="12" cy="16" r="5" fill="none" stroke="#FFB3A6" stroke-width="2.6"/><path d="M17 16h9M22.5 16v4M26 16v3" fill="none" stroke="#FFB3A6" stroke-width="2.6" stroke-linecap="round"/></svg>
       <span class="brand-text"><span class="brand-name">Clavis <span>IT Service</span></span><span class="brand-claim">Zuverlässig · Vor Ort</span></span>'''
 
 THEME_BOOT = ("<script>(function(){try{var t=localStorage.getItem('clavis-theme');"
